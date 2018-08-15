@@ -12,7 +12,7 @@ class Containers extends Component {
         <div>
             
             <Navbar />
-           <List />
+           {/* <List /> */}
         </div> );
     }
 }

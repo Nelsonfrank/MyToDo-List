@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Navbar extends Component {
    state = {
       value1: 0,
-      text:'',
+      text:"",
+      txtInput:[]
+
    };
 
    styles = {
@@ -31,7 +33,7 @@ class Navbar extends Component {
 
         return <React.Fragment>
             <nav className="navbar navbar-dark bg-info m-2">
-  <span  style = {this.styles} class="navbar-brand mb-0 h1 "> MyTODO-LIST</span>
+  <span  style = {this.styles} className="navbar-brand mb-0 h1 "> MyTODO-LIST</span>
       </nav>
 
 
@@ -50,6 +52,36 @@ class Navbar extends Component {
            <h3><u>DESCRIPTION</u></h3>
            <h6>Number:<span className={this.colorBadge()} >{this.countList()}</span></h6>
 
+           </div>
+           <div className ="row">
+               <div className ="col-8" >
+
+                {   this.state.txtInput.map((v) => {
+          return <div className="card " style={{width:750, height:"auto", marginLeft:0, marginTop:10, marginBottom:10,}}>
+              <ul className="list-group list-group-flush m-2">
+              <li className ="list-group-item">
+              {v}<button className="btn btn-danger" style={{float:"right" }} onClick={this.handledelTodoItem.bind(this, v)}>Delete</button>
+
+              </li>
+    
+              </ul>
+              </div>
+          
+        })}
+        {/* {this.state.txtInput.map((evt) =><div className="card " style={{width:750, height:"auto", marginLeft:0, marginTop:10, marginBottom:10,}} >
+
+        
+        <ul className="list-group list-group-flush m-2">
+
+
+            <div className ="ca">
+            <li className="list-group-item">{evt}<button className= "btn btn-danger " style={{float:"right" }} onClick = {this.handledelTodoItem}>Delete</button></li>
+         
+            </div>
+        </ul> </div>)} */}
+        
+     
+               </div>
            </div>
             </div>
        </div>
@@ -71,24 +103,36 @@ class Navbar extends Component {
     
 
 
-   buttonAction(){
-      
-        if (this.state.text.length !== 0) return 
-    }    
+  
 
     listUpdates =()=> {
    
+
+        this.state.txtInput.push(this.state.text);
+
+        this.setState(this.state);        
         this.setState({ value1: this.state.value1+1});
+
        }
 
        handleInputChange = (evt) => {
         this.setState({ text: evt.target.value });
+
+            
       }
   
-      handleAddList = () => {
-        const { text} = this.state;
-        alert(`Welcome ${text}`);
-      }
+   
+      handledelTodoItem (v){
+
+        for(let i = 0; i < this.state.txtInput.length; i++){
+          if(this.state.txtInput[i] == v){
+             delete this.state.txtInput[i];
+          }
+        }
+        this.setState({txtInput:this.state.txtInput})
+        this.setState({ value1: this.state.value1-1});
+    }
+
 
  }
  
