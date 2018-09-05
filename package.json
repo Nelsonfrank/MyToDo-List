@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://nelsonfrank.github.io/MyToDo-List/",
+  "engines": {
+    "npm": "6.2.0",
+    "node": "10.9.0"
+    },
   "dependencies": {
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
