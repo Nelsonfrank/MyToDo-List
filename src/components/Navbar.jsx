@@ -51,7 +51,9 @@ class Navbar extends Component {
            <div className="col-4 border p-3">
            <h3><u>DESCRIPTION</u></h3>
            <h6>ListNumber:<span className={this.colorBadge()} >{this.countList()}</span></h6>
-
+           {/* <button type="button" class="btn btn-primary">
+  Notifications <span className={this.colorBadge()} >{this.countList()}</span>
+</button> */}
            </div>
            <div className ="row">
                <div className ="col-8" >
