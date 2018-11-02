@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import Containers from './components/Containers';
+import '/home/nelson/mytodo-list/node_modules/bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(<Containers />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();
