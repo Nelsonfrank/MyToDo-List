@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-21T06:07:43.702Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="XD826hS70GPYQ_DqDChB" version="13.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-21T06:09:06.826Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="bRIzGA-pcXVaQruoZ7Jc" version="13.6.4" type="github">
   <diagram id="FjNkSXWOyc5UiZwZQ72N" name="Page-1">
     <mxGraphModel dx="2400" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -180,8 +180,8 @@
             <mxPoint x="540" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cvFXSIpvlwLZWVZvStXr-20" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="40" width="40" height="20" as="geometry" />
+        <mxCell id="cvFXSIpvlwLZWVZvStXr-20" value="&lt;font style=&quot;font-size: 18px&quot;&gt;CLEARANCE PROCESS USE CASE DIAGRAM&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="40" width="400" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
